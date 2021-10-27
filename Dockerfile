@@ -62,7 +62,7 @@ RUN $INST_SCRIPTS/chrome.sh
 RUN $INST_SCRIPTS/xfce_ui.sh
 ADD ./src/common/xfce/ $HOME/
 
-### configure startup
+### configure startup 1
 RUN $INST_SCRIPTS/libnss_wrapper.sh
 ADD ./src/common/scripts $STARTUPDIR
 RUN $INST_SCRIPTS/set_user_permission.sh $STARTUPDIR $HOME
